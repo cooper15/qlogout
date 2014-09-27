@@ -1,9 +1,6 @@
 #include "logout.h"
 #include "ui_logout.h"
-#include<QTimer>
-#include"iostream"
-#include<QTime>
-#include<shudown.h>
+
 using::std::cout;
 using::std::endl;
 
@@ -39,4 +36,16 @@ void Logout::on_apagarBtn_clicked()
 {
     Shudown *apagar = new Shudown();
     apagar->apagarSistema();
+}
+
+void Logout::on_reiniciarBtn_clicked()
+{
+    Reboot *reiniciar = new Reboot();
+    reiniciar->reiniciarSistema();
+}
+
+void Logout::on_suspenderBtn_clicked()
+{
+    Suspend *suspender = new Suspend();
+    suspender->suspenderSistema();
 }

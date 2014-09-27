@@ -2,6 +2,12 @@
 #define LOGOUT_H
 
 #include <QMainWindow>
+#include<QTimer>
+#include"iostream"
+#include<QTime>
+#include<shudown.h>
+#include<reboot.h>
+#include<suspend.h>
 
 namespace Ui {
 class Logout;
@@ -19,6 +25,10 @@ private slots:
     void countdown();
 
     void on_apagarBtn_clicked();
+
+    void on_reiniciarBtn_clicked();
+
+    void on_suspenderBtn_clicked();
 
 private:
     Ui::Logout *ui;
