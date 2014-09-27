@@ -30,6 +30,8 @@ private slots:
 
     void on_suspenderBtn_clicked();
 
+    void on_cancelarBtn_clicked();
+
 private:
     Ui::Logout *ui;
 };
