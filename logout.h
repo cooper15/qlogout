@@ -18,6 +18,8 @@ public:
 private slots:
     void countdown();
 
+    void on_apagarBtn_clicked();
+
 private:
     Ui::Logout *ui;
 };

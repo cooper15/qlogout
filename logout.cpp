@@ -3,6 +3,7 @@
 #include<QTimer>
 #include"iostream"
 #include<QTime>
+#include<shudown.h>
 using::std::cout;
 using::std::endl;
 
@@ -31,4 +32,11 @@ void Logout::countdown()
     ui->conteoLbl->setText(valorActual + "s");
     if(contador == 0)
         timer->stop();
+
+}
+
+void Logout::on_apagarBtn_clicked()
+{
+    Shudown *apagar = new Shudown();
+    apagar->apagarSistema();
 }
