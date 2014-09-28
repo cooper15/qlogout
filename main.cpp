@@ -13,6 +13,8 @@ int main(int argc, char *argv[])
             w.size(),
             qApp->desktop()->availableGeometry()
         ));
+    w.setMinimumSize(440,90);
+    w.setMaximumSize(440,90);
     w.show();
 
     return a.exec();
