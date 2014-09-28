@@ -5,7 +5,7 @@
 #include<QTimer>
 #include"iostream"
 #include<QTime>
-#include<shudown.h>
+#include<shutdown.h>
 #include<reboot.h>
 #include<suspend.h>
 

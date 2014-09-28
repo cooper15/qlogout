@@ -36,7 +36,7 @@ void Logout::countdown()
     if(contador == 0)
     {
         timerStop();
-        Shudown *apagar = new Shudown();
+        Shutdown *apagar = new Shutdown();
         apagar->apagarSistema();
     }
 
@@ -50,7 +50,7 @@ void timerStop()
 void Logout::on_apagarBtn_clicked()
 {
     timerStop();
-    Shudown *apagar = new Shudown();
+    Shutdown *apagar = new Shutdown();
     apagar->apagarSistema();
 }
 

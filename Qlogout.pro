@@ -14,13 +14,13 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         logout.cpp \
-    shudown.cpp \
     reboot.cpp \
-    suspend.cpp
+    suspend.cpp \
+    shutdown.cpp
 
 HEADERS  += logout.h \
-    shudown.h \
     reboot.h \
-    suspend.h
+    suspend.h \
+    shutdown.h
 
 FORMS    += logout.ui

@@ -1,11 +1,11 @@
-#include "shudown.h"
+#include "shutdown.h"
 
-Shudown::Shudown()
+Shutdown::Shutdown()
 {
 
 }
 
-void Shudown::apagarSistema()
+void Shutdown::apagarSistema()
 {
     system("dbus-send --system --print-reply --dest=org.freedesktop.login1 \
            /org/freedesktop/login1 org.freedesktop.login1.Manager.PowerOff \

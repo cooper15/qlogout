@@ -1,10 +1,10 @@
 #ifndef SHUDOWN_H
 #define SHUDOWN_H
 #include<stdlib.h>
-class Shudown
+class Shutdown
 {
 public:
-    Shudown();
+    Shutdown();
     void apagarSistema(void);
 };
 
