@@ -1,6 +1,7 @@
 #include "logout.h"
 #include "ui_logout.h"
 
+
 using::std::cout;
 using::std::endl;
 
@@ -8,6 +9,7 @@ int contador = 60; // Al declarar el contador una sola vez se logra el decrement
 QTimer *timer;
 
 void timerStop();
+void centrarVentana();
 
 Logout::Logout(QWidget *parent) :
     QMainWindow(parent),
@@ -66,6 +68,7 @@ void Logout::on_suspenderBtn_clicked()
     timerStop();
     Suspend *suspender = new Suspend();
     suspender->suspenderSistema();
+    this->close();
 }
 
 void Logout::on_cancelarBtn_clicked()
