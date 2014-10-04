@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
             w.size(),
             qApp->desktop()->availableGeometry()
         ));
+    w.setWindowFlags(Qt::FramelessWindowHint|Qt::WindowStaysOnTopHint);
     w.setMinimumSize(440,90);
     w.setMaximumSize(440,90);
     w.show();
