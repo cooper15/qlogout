@@ -1,7 +1,6 @@
 #include "logout.h"
 #include "ui_logout.h"
 
-
 using::std::cout;
 using::std::endl;
 
